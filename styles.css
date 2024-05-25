@@ -2,6 +2,12 @@ body{
     /* background-color: #13072E; */
     background-image: url(Images/bg-image3.png);
     font-family:'Poppins', Poppins, monospace;
+    background-size: 100vw 100vh;
+}
+
+#sitelogo{
+  width: 3em;
+  height: 3em;
 }
 
 header {
