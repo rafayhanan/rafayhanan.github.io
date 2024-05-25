@@ -1,73 +1,118 @@
-body{
-    /* background-color: #13072E; */
-    background-image: url(Images/bg-image3.png);
-    font-family:'Poppins', Poppins, monospace;
-    background-size: 100vw 100vh;
+*{
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  font-family: 'Poppins', sans-serif;
 }
 
-#sitelogo{
+
+body {
+  background-image: url(Images/bg-image3.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+#sitelogo {
   width: 3em;
   height: 3em;
 }
 
 header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
 }
 
 header h1 {
-    display: flex;
-    align-items: center;
-    color:#DA2032;
+  display: flex;
+  align-items: center;
+  color: #DA2032;
+  
 }
 
+main h1{
+  font-weight: 800;
+  font-size: 3em;
+}
 h1 img {
-    margin-right: 10px; 
+  margin-right: 10px;
 }
 
-/*Designing Nav bar*/
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
-    margin: 0;
-    padding: 0;
-    font-size:1.3em;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
 }
 
 nav ul li a {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
+  color: white;
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #DA2032; 
+  border-bottom: 2px solid #DA2032;
 }
 
+.home {
+  padding: 100px 0;
+}
 
-/*About section*/
-.about {
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
 }
 
-.myphoto img{
-  width: 70%;
-  height: 70%;
-  margin-left: 10em;
+.intro {
+  flex: 1;
+  color: white;
+  text-align: left; 
+  padding-right: 20px; 
 }
 
-.intro h1{
-  color:white;
+.myphoto {
+  flex: 1;
+  text-align: right; 
 }
 
-#red{
-  color:#DA2032;
+.myphoto img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
+#red {
+  color: #DA2032;
+}
+
+
+/*About me section*/
+.about {
+  padding: 50px 20px; 
+}
+
+.about-me {
+  max-width: 800px;
+}
+
+.about-me h2 {
+  color: white;
+  border-bottom: 2px solid #DA2032;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  color: white;
+  line-height: 1.6;
+}
 
 
