@@ -13,6 +13,10 @@ body {
   color:white;
 }
 
+main{
+  font-size: 1.2em;
+}
+
 #sitelogo {
   width: 3em;
   height: 3em;
@@ -96,7 +100,7 @@ nav ul li a:hover {
 
 /*About me section*/
 .about {
-  padding: 50px 20px; 
+  padding: 6.5% 6.5%; 
 }
 
 .about-me {
@@ -115,4 +119,218 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+.red-btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
 
+.red-btn:hover {
+  background-color: #DA2032;
+  box-shadow: 0px 15px 20px #ab1524;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.red-btn:active {
+  transform: translateY(-1px);
+}
+
+
+/*Skills section*/
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #DA2032 0%, #ee7892 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #ad101f 0%, #ee7892 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.skills div h2{
+  color: white;
+  border-bottom: 2px solid #DA2032;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+
+.skills{
+  padding: 6.5% 6.5%;
+}
+
+.skills div{
+  max-width: 800px;
+}
+
+.allcards{
+  display: flex;
+}
+
+
+/*form*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  /* background-color: #0a192f; */
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #DA2032;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ccd6f6;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #DA2032;
+  font-weight: bold;
+  outline: 1px solid #DA2032;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #DA2032;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #DA2032 0%, #DA2032 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.contact :first-child h2{
+  color: white;
+  border-bottom: 2px solid #DA2032;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contact{
+  padding: 6.5% 6.5%;
+}
+
+.contact-me{
+  display: flex;
+  justify-content: center;
+}
