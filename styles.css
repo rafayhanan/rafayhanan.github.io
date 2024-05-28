@@ -63,6 +63,7 @@ nav ul li a:hover {
   border-bottom: 2px solid #DA2032;
 }
 
+
 .home {
   padding: 100px 0;
 }
@@ -233,13 +234,14 @@ nav ul li a:hover {
 
 /*form*/
 .form {
+  flex: 7;
   display: flex;
   flex-direction: column;
   align-self: center;
   font-family: inherit;
-  gap: 10px;
+  gap: 20px;
   padding-inline: 2em;
-  padding-bottom: 0.4em;
+  padding-bottom: 2em;
   background-color: #171717;
   /* background-color: #0a192f; */
   border-radius: 20px;
@@ -250,7 +252,8 @@ nav ul li a:hover {
   text-align: center;
   margin: 2em;
   color: #DA2032;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 900;
   background-color: transparent;
   align-self: center;
 }
@@ -259,9 +262,9 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
+  gap: 1em;
   border-radius: 10px;
-  padding: 0.6em;
+  padding: 1em;
   border: none;
   outline: none;
   color: white;
@@ -274,6 +277,8 @@ nav ul li a:hover {
   border: none;
   outline: none;
   width: 100%;
+  height: 2em;
+  font-size: 1em;
   color: #ccd6f6;
   padding-inline: 1em;
 }
@@ -281,13 +286,14 @@ nav ul li a:hover {
 .sendMessage-btn {
   cursor: pointer;
   margin-bottom: 3em;
-  padding: 1em;
+  padding: 1.3em;
   border-radius: 10px;
   border: none;
   outline: none;
   background-color: transparent;
   color: #DA2032;
   font-weight: bold;
+  font-size: 1em;
   outline: 1px solid #DA2032;
   transition: all ease-in-out 0.3s;
 }
@@ -304,10 +310,11 @@ nav ul li a:hover {
   background-image: linear-gradient(163deg, #DA2032 0%, #DA2032 100%);
   border-radius: 22px;
   transition: all 0.3s;
+  
 }
 
 .form-card1:hover {
-  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  box-shadow: 0px 0px 30px 1px rgba(255, 3, 3, 0.3);
 }
 
 .form-card2 {
@@ -336,12 +343,30 @@ nav ul li a:hover {
   justify-content:left;
 }
 
+#messagebox {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 6em; 
+  color: #ccd6f6;
+  padding-inline: 1em;
+  resize: none; 
+}
+
 
 
 /*Social Media */
+
+.social{
+  flex:3;
+}
+
 ul {
   list-style: none;
 }
+
+
 
 .example-2 {
   display: flex;
@@ -352,8 +377,9 @@ ul {
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
-  padding: 0.5rem;
+  padding: 1rem;
 }
+
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: 100%;
@@ -438,3 +464,9 @@ ul {
 }
 
 
+/*footer*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
