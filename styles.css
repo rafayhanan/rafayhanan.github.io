@@ -500,13 +500,12 @@ ul {
     top: 100px; 
     left: 0;
     right: 0;
-    background-color: #33333300;
+    background-color: #000000;
     padding: 10px 0;
   }
   
   nav ul.show {
     display: flex; 
-    background-color: transparent;
 
   }
   
@@ -530,6 +529,24 @@ ul {
     text-align: center;
     justify-content: center;
   }
+
+  .container{
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
+  .intro{
+    text-align: center;
+  }
+
+  .contact-me{
+    flex-direction:column;
+  }
+
+  .example-2{
+    flex-direction: row;
+  }
+
 }
 
 
