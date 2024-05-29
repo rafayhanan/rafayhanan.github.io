@@ -64,6 +64,34 @@ nav ul li a:hover {
 }
 
 
+
+.navbar-toggle {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+
+.navbar-toggle.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar-toggle.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .home {
   padding: 100px 0;
 }
@@ -456,6 +484,52 @@ ul {
 .example-2 .icon-content a[data-social="email"] .filled,
 .example-2 .icon-content a[data-social="email"] ~ .tooltip {
   background-color: #ff0000;
+}
+
+/* RESPONSIVE */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex; 
+  }
+  
+  nav ul {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    right: 0;
+    background-color: #33333300;
+    padding: 10px 0;
+  }
+  
+  nav ul.show {
+    display: flex; 
+    background-color: transparent;
+
+  }
+  
+  nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .allcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section:not(.home) div h2{
+    text-align: center;
+  }
+
+  .about-me p{
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 
