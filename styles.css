@@ -547,6 +547,10 @@ ul {
     flex-direction: row;
   }
 
+  .example-2 .icon-content:hover .tooltip{
+    visibility: hidden;
+  }
+
 }
 
 
