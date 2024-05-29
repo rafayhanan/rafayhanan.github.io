@@ -306,6 +306,10 @@ nav ul li a:hover {
   padding-inline: 1em;
 }
 
+.input-field.invalid {
+  border: 2px solid red;
+}
+
 .sendMessage-btn {
   cursor: pointer;
   margin-bottom: 3em;

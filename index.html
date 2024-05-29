@@ -88,14 +88,15 @@
                 <h2>Contact Me</h2>
             </div>
             <div class="contact-me">
-                <div class="form">
+                <div class="form" onsubmit="return validateForm()">
                     <div class="form-card1">
                         <div class="form-card2">
                           <form class="form">
                             <p class="form-heading">Get In Touch</p>
                       
                             <div class="form-field">
-                              <input required="" placeholder="Name" class="input-field" type="text" />
+                              <input required="" placeholder="Name" class="input-field" type="text" id="name"/>
+                              <span class="error-message" id="name-error"></span>
                             </div>
                       
                             <div class="form-field">
@@ -104,7 +105,9 @@
                                 placeholder="Email"
                                 class="input-field"
                                 type="email"
+                                id="email"
                               />
+                              <span class="error-message" id="email-error"></span>
                             </div>
                       
                             <div class="form-field">
@@ -113,7 +116,9 @@
                                 placeholder="Subject"
                                 class="input-field"
                                 type="text"
+                                id="subject"
                               />
+                              <span class="error-message" id="subject-error"></span>
                             </div>
                       
                             <div class="form-field">
@@ -125,6 +130,7 @@
                                 class="input-field"
                                 id="messagebox"
                               ></textarea>
+                              <span class="error-message" id="messagebox-error"></span>
                             </div>
                             <button class="sendMessage-btn">Send Message</button>
                           </form>
