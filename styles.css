@@ -179,8 +179,8 @@ nav ul li a:hover {
 /*Skills section*/
 .card {
   position: relative;
-  width: 260px;
-  height: 360px;
+  width: 200px;
+  height: 300px;
   background: black;
   display: flex;
   align-items: center;
@@ -506,6 +506,58 @@ ul {
   background-color: #ff0000;
 }
 
+
+/*Technologies*/
+.technologies .heading {
+  padding: 6.7% 6.7%;
+}
+
+.technologies div h2{
+  color: white;
+  border-bottom: 2px solid #DA2032;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  width: 80%;
+  overflow: hidden;
+  background-color:black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left:120px;
+  margin-top:50px;
+}
+
+.slider {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.slide {
+  min-width: 150px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-150px * 6)); 
+  }
+}
+
+
 /* RESPONSIVE */
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -571,59 +623,10 @@ ul {
     visibility: hidden;
   }
 
-}
-
-
-/*Technologies*/
-.technologies{
-  padding: 6.7% 6.7%;
-}
-
-.technologies div h2{
-  color: white;
-  border-bottom: 2px solid #DA2032;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.slider-container {
-  width: 80%;
-  overflow: hidden;
-  background-color:black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  margin-left:120px;
-  margin-top:50px;
-}
-
-.slider {
-  display: flex;
-  animation: slide 20s linear infinite;
-}
-
-.slide {
-  min-width: 150px;
-  margin: 0 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide img {
-  max-width: 100%;
-  max-height: 100px;
-}
-
-@keyframes slide {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(calc(-150px * 6)); /* Adjust based on number of slides */
+  .slider-container{
+    margin-left: 0px;
   }
 }
-
 
 /*footer*/
 footer{
