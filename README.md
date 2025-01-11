@@ -1,5 +1,5 @@
 # rafayhanan.github.io
-Portfolio Website
+Portfolio Website created using HTML and CSS
 <br>
 Visit: [rafayhanan.github.io](https://rafayhanan.github.io/)
 
